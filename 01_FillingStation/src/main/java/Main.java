@@ -4,7 +4,8 @@ public class Main {
         System.out.println("Система расчёта стоимости топлива");
 
         int fuelType = 95;
-        int amount = 420;
+        int amount = 45;
+        int maxAmount =40;
 
         double fuel92price = 60.2;
         double fuel95price = 67.33;
@@ -21,6 +22,11 @@ public class Main {
         if (amount < 1) {
             System.out.println("Указано слишком малое количество топлива");
             amount = 0;
+        }
+
+        if (amount >= maxAmount){
+            System.out.println("Указано слишком большое количество топлива");
+            amount = maxAmount;
         }
 
         System.out.println("Цена выбранного топлива: " + fuelPrice + " руб.");
