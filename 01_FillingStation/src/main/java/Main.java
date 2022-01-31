@@ -5,7 +5,7 @@ public class Main {
 
         int fuelType = 95;
         int amount = 45;
-        int maxAmount =40;
+        int maxAmount = 40;
 
         double fuel92price = 60.2;
         double fuel95price = 67.33;
@@ -24,7 +24,7 @@ public class Main {
             amount = 0;
         }
 
-        if (amount >= maxAmount){
+        if (amount >= maxAmount) {
             System.out.println("Указано слишком большое количество топлива");
             amount = maxAmount;
         }
